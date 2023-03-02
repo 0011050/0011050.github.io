@@ -231,7 +231,7 @@ header .navbar ul li a:hover {
 
 
 .projects {
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
   min-height: 80vh;
 }
 
@@ -255,91 +255,31 @@ header .navbar ul li a:hover {
   transition: 0.3s;
   background: rgb(252, 252, 252);
 }
-.projects .box-container .box:hover {
-  transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
-}
-.projects .box-container .box .image {
-  flex: 1 1 20rem;
-  width: 100%;
-}
-.projects .box-container .box img {
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.projects .box-container .box .content {
-  position: relative;
+
+
+.projects .flex-container{
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  flex-wrap: wrap;
-  flex: 1 1 70rem;
-}
-.projects .box-container .box .content h3 {
-  font-size: 2.5rem;
-  color: #012970;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 1rem;
-}
-.projects .box-container .box .content p {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  text-align: left;
-}
-.projects h4 {
-  font-size: 2rem;
-  color: rgb(34, 109, 0);
-  text-align: left;
-  margin: 1rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-}
-
-
-@media screen and (max-width: 600px) {
-  .projects .box-container .box {
-    flex-direction: column;
-    width: 100%;
-  }
-
-
-  .projects .btns {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex-wrap: wrap;
-  }
-}
-
-.footer {
-  min-height: auto;
-  padding-top: 0;
-  background: rgb(0, 1, 43);
-}
-.footer .box-container {
-  display: flex;
+  lex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
-.footer .box-container .box {
-  flex: 1 1 25rem;
-  margin: 2.5rem;
+
+.projects .flex-container .box {
+  display: flex;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+
 }
-.footer .box-container .box h3 {
-  font-size: 2.5rem;
-  color: #fff;
-  padding-bottom: 1rem;
-  font-weight: normal;
-}
-.footer .box-container .box p {
-  font-size: 1.5rem;
-  color: #ccc;
-  padding: 0.7rem 0;
-  text-transform: none;
-}
+.projects .flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
 
 
