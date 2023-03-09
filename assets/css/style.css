@@ -154,19 +154,12 @@ header .navbar ul li a:hover {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
-  background: linear-gradient(to bottom, #0389aa, #00ffea);
+  margin: 0;
+  padding: 0;
 }
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
+
 .home .content {
   flex: 1 1 40rem;
   padding-top: 1rem;
@@ -177,7 +170,7 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  width: 60%;
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -393,3 +386,8 @@ header .navbar ul li a:hover {
 }
 
 
+
+
+#vantajs {
+  width: 100%; height: 100vh; z-index: -1;position: fixed;
+}
